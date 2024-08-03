@@ -1,0 +1,13 @@
+No código do arquivo array.js fiz duas funções diferentes mas que fazem a mesma coisa: retornam o tamanho de um array sem utilizar o método nativo do javascript.
+
+Pra isso fiz uso dos conceitos da lógica de programação, da base da programação como:
+variáveis (var/let)
+estrutura de controle/decisão (if)
+estrutura de repetição (for)
+funções
+
+Também demonstrei o do..while e também fiz um loop infinito (que vocês ainda irão fazer muito)
+
+Durante a aula ao vivo também criei o arquivo base.js e enquanto fazia falei sobre o uso de var e const além do let.
+
+Com isso demonstrei o escopo de variáveis utilizando o var e o let.
