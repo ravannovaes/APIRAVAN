@@ -6,7 +6,7 @@ const alunos = require("./controller/controlleralunos.js")
 app.use(express.json())
 
 app.get("/", (req, res) => {
-    res.send("Rota Raiz 100")
+    res.send("Rota Raiz")
 })
 
 app.get("/alunos/", alunos.exibir)
@@ -24,4 +24,4 @@ app.listen(3000,()=>{
 })
 
 
-console.log("Primeiro Servidor Node")
+

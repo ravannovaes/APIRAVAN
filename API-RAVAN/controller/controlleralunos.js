@@ -25,7 +25,8 @@ async function Delete(req,res, id){
 
 
 async function Update (req, res) {
-    await UpdateAluno(req, res, req.params.id, req.body);
+    id= req.params.id
+    await UpdateAluno(req, res, id, req.body);
     res.sendStatus(200);
 }
 
