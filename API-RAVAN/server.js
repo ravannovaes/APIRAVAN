@@ -1,19 +1,21 @@
 const express = require("express")
 const app = express()
-const pool = require("./db")
 const alunos = require("./controller/controlleralunos.js")
 
+
+const Joi = require('joi');
 app.use(express.json())
 
 app.get("/", (req, res) => {
     res.send("Rota Raiz")
 })
 
+
 app.get("/alunos/", alunos.exibir)
 
 app.get("/alunos/:id", alunos.exibirID)
 
-app.post("/alunos/", alunos.Insert)
+app.post("/alunos/",alunos.Insert)
 
 app.delete("/alunos/:id", alunos.Delete)
 

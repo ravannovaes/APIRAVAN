@@ -1,4 +1,4 @@
-const pool = require("../db");
+
 const {busca, buscaByID , InsertAlunos , DeleteAluno, UpdateAluno} = require("../model/AlunoModel");
 
 async function exibir (req,res) { 
@@ -7,7 +7,7 @@ async function exibir (req,res) {
 };
 
 async function exibirID (req,res,id) { 
-   const result = await buscaByID(req,res,id);
+    const result = await buscaByID(req,res,id);
     res.json(result);
 };
 
@@ -17,6 +17,7 @@ async function  Insert(req, res) {
     res.sendStatus(201);
  
 }
+
 
 async function Delete(req,res, id){
     DeleteAluno(req,res, id)
